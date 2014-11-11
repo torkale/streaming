@@ -1,0 +1,21 @@
+<html>
+<head>
+    <script src="http://jwpsrv.com/library/cdlj1mgOEeSNcgoORWfmyA.js"></script>
+    <title>HTTP Live Streaming With JW player</title>
+    <style>img#myElement_logo.jwlogo{display: none;}</style>
+</head>
+<body>
+    <a href="jwplayer">jw player</a>
+    <div id="myElement">Loading the player...</div>
+    <script type="text/javascript">
+        jwplayer("myElement").setup({
+            sources: [
+              { file: "http://0.0.0.0:8080/hls/movie.m3u8"},
+              { file: "rtmp://0.0.0.0:1935/webcam/mystream"},
+            ],
+            width: "90%",
+            aspectratio: "16:9"
+        });
+    </script>
+</body>
+</html>
