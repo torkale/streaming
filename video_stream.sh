@@ -28,7 +28,8 @@
   #-segment_time 20 \ using time spans of 20s
   #-reset_timestamps 1 \ Reset timestamps at the begin of each segment, so that each segment will start with near-zero timestamps.
   #public/mp4/out%02d.mp4 /mp4 output destination
-ffmpeg \
+mkdir public/hls && \
+  ffmpeg \
   -i grep.sdp \
   -f hls \
   -hls_time 1 \

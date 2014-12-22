@@ -40,7 +40,7 @@ ffmpeg \
   -r 15 \
   -g 300 \
   -s 1280x720 \
-  -f rtp rtp://10.100.102.8:1234
+  -f rtp rtp://$TARGET:1234
   #-f hls \
   #-hls_time 1 \
   #-hls_wrap 10 \

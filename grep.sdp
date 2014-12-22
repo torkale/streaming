@@ -1,7 +1,7 @@
 v=0
-o=- 0 0 IN IP4 10.100.102.8
+o=- 0 0 IN IP4 79.177.148.16
 s=No Name
-c=IN IP4 10.100.102.8
+c=IN IP4 79.177.148.16
 t=0 0
 a=tool:libavformat 56.4.101
 m=video 1234 RTP/AVP 96
