@@ -1,14 +1,18 @@
 ## git
 
-`
+``` bash
+
 	sudo yum install -y git
-`
+
+```
 
 ## clone
 
-` 
+``` bash
+
 	git clone https://gitlab.com/nannit/streaming.git
-`
+
+```
 
 ## ffmpeg
 
@@ -23,18 +27,23 @@
 	sudo tar xvf ffmpeg.static.64bit.latest.tar.gz
 
 	sudo ln -s /usr/local/bin/ffmpeg/ffmpeg /usr/bin/ffmpeg
+
 ```
 
 ## on local
 
-``` sh
+``` bash
+
 	TARGET=<remote ip> sh ./video_grep.sh
+
 ```
 
 ## on remote
 
 change ip on grep.sdp to match local ip
 
-``` sh
+``` bash
+
 	sh ./video_stream.sh
+
 ```
